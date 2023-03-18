@@ -3,15 +3,143 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "百年奥莱",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"float": "left",
+								"fontSrc": "./static/iconfont.ttf",
+								"text": "\ue848"
+							},{
+								"float": "right",
+								"fontSrc": "./static/iconfont.ttf",
+								"text": "\ue86f"
+							}
+						]
+					}
+				}
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/list/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/shopcart/shopcart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/index/indexSwiper",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/index/Recommend",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/common/Card",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/common/CommodityList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/common/Commodity",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/common/CommodityList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "百年奥莱",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	
+	"tabBar": {
+		"color": "#636263",
+		"selectedColor": "#636263",
+		"list": [
+				{
+					"pagePath": "pages/index/index",
+					"text": "首页",
+					"iconPath": "static/tabbar/3.1首页.png",
+					"selectedIconPath": "static/tabbar/3.1首页-选中.png"
+				},
+				{
+					"pagePath": "pages/list/list",
+					"text": "分类",
+					"iconPath": "static/tabbar/fenlei.png",
+					"selectedIconPath": "static/tabbar/fenlei-xuanzhong.png"
+				},
+				{
+					"pagePath": "pages/shopcart/shopcart",
+					"text": "购物车",
+					"iconPath": "static/tabbar/gouwuche.png",
+					"selectedIconPath": "static/tabbar/gouwuchexuanzhong.png"
+				},
+				{
+					"pagePath": "pages/my/my",
+					"text": "我的",
+					"iconPath": "static/tabbar/31wode.png",
+					"selectedIconPath": "static/tabbar/31wodexuanzhong.png"
+				}
+		]
+	}
 }
