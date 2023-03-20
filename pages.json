@@ -6,6 +6,7 @@
 				"navigationBarTitleText": "百年奥莱",
 				"navigationBarBackgroundColor": "#FFFFFF",
 				"app-plus": {
+					"scrollIndicator": "none",
 					"titleNView": {
 						"buttons": [
 							{
@@ -96,6 +97,42 @@
         }
         ,{
             "path" : "components/common/CommodityList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/index/banner",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/index/Icons",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/index/Hot",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "components/index/Shop",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",

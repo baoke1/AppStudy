@@ -1,11 +1,11 @@
 <template>
 	<view>
-		<view class="commodity">
+		<view class="commodity" :style="'flex-wrap:'+wrap+';'">
 			
-			<view class="commodity-item" v-for="(item,index) in dateList" :key='index'>
-				<image class="commodity-img" :src="item.imgurl"></image>
+			<view class="commodity-item" v-for="(item,index) in dateList" :key='index' :style="'width:'+itemW+';'">
+				<image class="commodity-img" :src="item.imgurl" :style="'height:'+bigH+';'"></image>
 				<view class="commodity-context">
-					<text class="commodity-name">
+					<text class="commodity-name" :style="'font-size:'+nameSize+';'">
 						{{item.name}}
 					</text>
 					<view>
@@ -23,7 +23,23 @@
 <script>
 	export default {
 		props:{
-			dateList: Array
+			dateList: Array,
+			itemW:{
+				type:String,
+				default:"375rpx"
+			},
+			bigH:{
+				type:String,
+				default:"375rpx"
+			},
+			wrap:{
+				type:String,
+				default:"wrap"
+			},
+			nameSize:{
+				type:String,
+				dafault:"26rpx"
+			}
 		},
 		data() {
 			return {
@@ -31,23 +47,21 @@
 			}
 		},
 		methods: {
-			
+
 		},
+					
 	}
 </script>
 
 <style>
 .commodity{
 	display: flex;
-	flex-wrap: wrap;
 }
 .commodity-item{
-	width:375rpx;
 	padding-bottom: 20rpx;
 }
 .commodity-img{
 	width:100%;
-	height:375rpx;
 }
 .commodity-context{
 	text-align: center;

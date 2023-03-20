@@ -1,5 +1,7 @@
 <template>
 	<view class="recommend">
+		
+		
 		<view class="recommend-item">
 			<image class="item-big" src="../../static/img/right_2.png"></image>
 			<view class="item-small">
@@ -8,14 +10,7 @@
 				<image class="item-img" src="../../static/logo.png"></image>
 			</view>
 		</view>
-		<view class="recommend-item">
-			<image class="item-big" src="../../static/img/right_2.png"></image>
-			<view class="item-small">
-				<image class="item-img" src="../../static/logo.png"></image>
-				<image class="item-img" src="../../static/logo.png"></image>
-				<image class="item-img" src="../../static/logo.png"></image>
-			</view>
-		</view>
+		
 	</view>
 </template>
 

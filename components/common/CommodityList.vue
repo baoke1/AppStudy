@@ -1,6 +1,5 @@
 <template>
 	<view class="commodity-list">
-		商品列表
 		<commodity :dateList="commodityList"></commodity>
 	</view>
 </template>
