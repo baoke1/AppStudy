@@ -1,0 +1,1 @@
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}"><swiper-item a:for="{{dataList}}" a:for-item="item" a:for-index="index" a:key="index"><view class="swiper-item"><image class="swiper-img" src="{{item.imgUrl}}"></image></view></swiper-item></swiper>

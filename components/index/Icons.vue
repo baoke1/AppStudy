@@ -1,42 +1,17 @@
 <template>
 	<view class="icons">
-		<view class="icons-item">
-			<image class="icons-img" src="../../static/img/left_1.png"></image>
-			<text class="icons-name">运动</text>
-		</view>
-		<view class="icons-item">
-			<image class="icons-img" src="../../static/img/left_1.png"></image>
-			<text class="icons-name">运动</text>
-		</view>
-		<view class="icons-item">
-			<image class="icons-img" src="../../static/img/left_1.png"></image>
-			<text class="icons-name">运动</text>
-		</view>
-		<view class="icons-item">
-			<image class="icons-img" src="../../static/img/left_1.png"></image>
-			<text class="icons-name">运动</text>
-		</view>
-		<view class="icons-item">
-			<image class="icons-img" src="../../static/img/left_1.png"></image>
-			<text class="icons-name">运动</text>
-		</view>
-		<view class="icons-item">
-			<image class="icons-img" src="../../static/img/left_1.png"></image>
-			<text class="icons-name">运动</text>
-		</view>
-		<view class="icons-item">
-			<image class="icons-img" src="../../static/img/left_1.png"></image>
-			<text class="icons-name">运动</text>
-		</view>
-		<view class="icons-item">
-			<image class="icons-img" src="../../static/img/left_1.png"></image>
-			<text class="icons-name">运动</text>
+		<view class="icons-item" v-for="(item,index) in dataList" :key="index">
+			<image class="icons-img" :src="item.imgUrl"></image>
+			<text class="icons-name" >{{item.name}}</text>
 		</view>
 	</view>
 </template>
 
 <script>
 	export default {
+		props:{
+			dataList:Array
+		},
 		data() {
 			return {
 				
@@ -54,7 +29,7 @@
 	 flex-wrap: wrap;
 }
 .icons-item{
-	weight:25%;
+	width:25%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -62,14 +37,15 @@
 	padding-top:20rpx;
 }
 .icons-img{
-	width: 130rpx;
+	width: 120rpx;
 	height: 110rpx;
-	padding-left: 47rpx;
+	
 }
 .icons-name{
-	width: 110rpx;
+	width: 100rpx;
 	height: 110rpx;
-	padding-left: 50%;
+	font-size: 15rpx;
+	text-align: center;
 	color:#636263;
 }
 </style>

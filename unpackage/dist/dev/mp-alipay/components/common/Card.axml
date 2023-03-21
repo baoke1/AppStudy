@@ -1,0 +1,1 @@
+<view class="card"><view>-</view><block a:if="{{$slots.$default}}"><slot></slot></block><block a:else>{{cardTitle}}</block><view>-</view></view>

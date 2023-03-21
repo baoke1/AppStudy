@@ -1,11 +1,14 @@
 <template>
 	<view class="banner">
-		<image class="banner-img" src="../../static/img/local-banner.png"></image>
+		<image class="banner-img" :src="dataList"></image>
 	</view>
 </template>
 
 <script>
 	export default {
+		props:{
+			dataList:String
+		},
 		data() {
 			return {
 				

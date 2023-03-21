@@ -2,7 +2,7 @@
 	<view>
 		<view class="commodity" :style="'flex-wrap:'+wrap+';'">
 			
-			<view class="commodity-item" v-for="(item,index) in dateList" :key='index' :style="'width:'+itemW+';'">
+			<view class="commodity-item" v-for="(item,index) in dataList" :key='index' :style="'width:'+itemW+';'">
 				<image class="commodity-img" :src="item.imgurl" :style="'height:'+bigH+';'"></image>
 				<view class="commodity-context">
 					<text class="commodity-name" :style="'font-size:'+nameSize+';'">
@@ -23,7 +23,7 @@
 <script>
 	export default {
 		props:{
-			dateList: Array,
+			dataList: Array,
 			itemW:{
 				type:String,
 				default:"375rpx"

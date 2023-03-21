@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/my/my",
+    "pages/shopcart/shopcart",
+    "components/index/indexSwiper",
+    "components/index/Recommend",
+    "components/common/Card",
+    "components/common/CommodityList",
+    "components/common/Commodity",
+    "components/common/CommodityList",
+    "components/index/banner",
+    "components/index/Icons",
+    "components/index/Hot",
+    "components/index/Shop"
+  ],
+  "subPackages": [],
+  "window": {
+    "defaultTitle": "百年奥莱",
+    "titleBarColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "textColor": "#636263",
+    "selectedColor": "#636263",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon": "static/tabbar/3.1首页.png",
+        "activeIcon": "static/tabbar/3.1首页-选中.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "name": "分类",
+        "icon": "static/tabbar/fenlei.png",
+        "activeIcon": "static/tabbar/fenlei-xuanzhong.png"
+      },
+      {
+        "pagePath": "pages/shopcart/shopcart",
+        "name": "购物车",
+        "icon": "static/tabbar/gouwuche.png",
+        "activeIcon": "static/tabbar/gouwuchexuanzhong.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "name": "我的",
+        "icon": "static/tabbar/31wode.png",
+        "activeIcon": "static/tabbar/31wodexuanzhong.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "plugin-wrapper": "/plugin-wrapper"
+  }
+}

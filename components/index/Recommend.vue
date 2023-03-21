@@ -2,12 +2,12 @@
 	<view class="recommend">
 		
 		
-		<view class="recommend-item">
-			<image class="item-big" src="../../static/img/right_2.png"></image>
-			<view class="item-small">
-				<image class="item-img" src="../../static/logo.png"></image>
-				<image class="item-img" src="../../static/logo.png"></image>
-				<image class="item-img" src="../../static/logo.png"></image>
+		<view class="recommend-item" v-for="(item,index) in dataList" :key="index">
+			<image class="item-big" :src="item.bigUrl"></image>
+			<view class="item-small" >
+				<block v-for="(k,i) in item.data" :key="i">
+					<image class="item-img" :src="k.imgUrl"></image>
+				</block>
 			</view>
 		</view>
 		
@@ -16,6 +16,9 @@
 
 <script>
 	export default {
+		props:{
+			dataList:Array
+		},
 		data() {
 			return {
 				
@@ -30,6 +33,7 @@
 <style lang="scss">
 .recommend{
 	padding: 30rpx;
+	background-color: #90d7ec;
 }
 .recommend-item{
 	display: flex;

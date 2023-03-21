@@ -1,0 +1,1 @@
+<view class="banner"><image class="banner-img" src="{{dataList}}"></image></view>

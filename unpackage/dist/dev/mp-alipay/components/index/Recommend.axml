@@ -1,0 +1,1 @@
+<view class="recommend"><view class="recommend-item" a:for="{{dataList}}" a:for-item="item" a:for-index="index" a:key="index"><image class="item-big" src="{{item.bigUrl}}"></image><view class="item-small"><block a:for="{{item.data}}" a:for-item="k" a:for-index="i" a:key="i"><image class="item-img" src="{{k.imgUrl}}"></image></block></view></view></view>
