@@ -18,41 +18,43 @@ router.get('/api/index_list/1/data/2', function(req, res, next) {
   res.json({
 		code:'0',
 		data:[
-			type: "commodityList",
-			data:[
-				{
-					id: 1,
-					imgurl:"../../static/img/local-banner.png",
-					name:"爆款珍惜极限商品，你值得拥有",
-					pprice:"299",
-					oprice:"659",
-					discount:"5.2"
-				},
-				{
-					id: 2,
-					imgurl:"../../static/img/local-banner.png",
-					name:"爆款珍惜极限商品，你值得拥有",
-					pprice:"299",
-					oprice:"659",
-					discount:"5.2"
-				},
-				{
-					id: 3,
-					imgurl:"../../static/img/local-banner.png",
-					name:"爆款珍惜极限商品，你值得拥有",
-					pprice:"299",
-					oprice:"659",
-					discount:"5.2"
-				},
-				{
-					id: 4,
-					imgurl:"../../static/img/local-banner.png",
-					name:"爆款珍惜极限商品，你值得拥有",
-					pprice:"299",
-					oprice:"659",
-					discount:"5.2"
-				},
-		  ]
+			{
+				type: "commodityList",
+				data:[
+					{
+						id: 1,
+						imgurl:"../../static/img/local-banner.png",
+						name:"爆款珍惜极限商品，你值得拥有",
+						pprice:"299",
+						oprice:"659",
+						discount:"5.2"
+					},
+					{
+						id: 2,
+						imgurl:"../../static/img/local-banner.png",
+						name:"爆款珍惜极限商品，你值得拥有",
+						pprice:"299",
+						oprice:"659",
+						discount:"5.2"
+					},
+					{
+						id: 3,
+						imgurl:"../../static/img/local-banner.png",
+						name:"爆款珍惜极限商品，你值得拥有",
+						pprice:"299",
+						oprice:"659",
+						discount:"5.2"
+					},
+					{
+						id: 4,
+						imgurl:"../../static/img/local-banner.png",
+						name:"爆款珍惜极限商品，你值得拥有",
+						pprice:"299",
+						oprice:"659",
+						discount:"5.2"
+					},	
+				]
+			}
 		]
 	});
 });
@@ -62,41 +64,43 @@ router.get('/api/index_list/2/data/3', function(req, res, next) {
   res.json({
 		code:'0',
 		data:[
-			type: "commodityList",
-			data:[
-				{
-					id: 1,
-					imgurl:"../../static/img/local-banner.png",
-					name:"爆款珍惜极限商品，你值得拥有",
-					pprice:"299",
-					oprice:"659",
-					discount:"5.2"
-				},
-				{
-					id: 2,
-					imgurl:"../../static/img/local-banner.png",
-					name:"爆款珍惜极限商品，你值得拥有",
-					pprice:"299",
-					oprice:"659",
-					discount:"5.2"
-				},
-				{
-					id: 3,
-					imgurl:"../../static/img/local-banner.png",
-					name:"爆款珍惜极限商品，你值得拥有",
-					pprice:"299",
-					oprice:"659",
-					discount:"5.2"
-				},
-				{
-					id: 4,
-					imgurl:"../../static/img/local-banner.png",
-					name:"爆款珍惜极限商品，你值得拥有",
-					pprice:"299",
-					oprice:"659",
-					discount:"5.2"
-				},
-		  ]
+			{
+				type: "commodityList",
+				data:[
+					{
+						id: 1,
+						imgurl:"../../static/img/local-banner.png",
+						name:"爆款珍惜极限商品，你值得拥有",
+						pprice:"299",
+						oprice:"659",
+						discount:"5.2"
+					},
+					{
+						id: 2,
+						imgurl:"../../static/img/local-banner.png",
+						name:"爆款珍惜极限商品，你值得拥有",
+						pprice:"299",
+						oprice:"659",
+						discount:"5.2"
+					},
+					{
+						id: 3,
+						imgurl:"../../static/img/local-banner.png",
+						name:"爆款珍惜极限商品，你值得拥有",
+						pprice:"299",
+						oprice:"659",
+						discount:"5.2"
+					},
+					{
+						id: 4,
+						imgurl:"../../static/img/local-banner.png",
+						name:"爆款珍惜极限商品，你值得拥有",
+						pprice:"299",
+						oprice:"659",
+						discount:"5.2"
+					},	
+				],
+			}
 		]
 	});
 });
@@ -106,41 +110,43 @@ router.get('/api/index_list/2/data/2', function(req, res, next) {
   res.json({
 		code:'0',
 		data:[
-			type: "commodityList",
-			data:[
-				{
-					id: 1,
-					imgurl:"../../static/img/local-banner.png",
-					name:"爆款珍惜极限商品，你值得拥有",
-					pprice:"299",
-					oprice:"659",
-					discount:"5.2"
-				},
-				{
-					id: 2,
-					imgurl:"../../static/img/local-banner.png",
-					name:"爆款珍惜极限商品，你值得拥有",
-					pprice:"299",
-					oprice:"659",
-					discount:"5.2"
-				},
-				{
-					id: 3,
-					imgurl:"../../static/img/local-banner.png",
-					name:"爆款珍惜极限商品，你值得拥有",
-					pprice:"299",
-					oprice:"659",
-					discount:"5.2"
-				},
-				{
-					id: 4,
-					imgurl:"../../static/img/local-banner.png",
-					name:"爆款珍惜极限商品，你值得拥有",
-					pprice:"299",
-					oprice:"659",
-					discount:"5.2"
-				},
-		  ]
+			{
+				type: "commodityList",
+				data:[
+					{
+						id: 1,
+						imgurl:"../../static/img/local-banner.png",
+						name:"爆款珍惜极限商品，你值得拥有",
+						pprice:"299",
+						oprice:"659",
+						discount:"5.2"
+					},
+					{
+						id: 2,
+						imgurl:"../../static/img/local-banner.png",
+						name:"爆款珍惜极限商品，你值得拥有",
+						pprice:"299",
+						oprice:"659",
+						discount:"5.2"
+					},
+					{
+						id: 3,
+						imgurl:"../../static/img/local-banner.png",
+						name:"爆款珍惜极限商品，你值得拥有",
+						pprice:"299",
+						oprice:"659",
+						discount:"5.2"
+					},
+					{
+						id: 4,
+						imgurl:"../../static/img/local-banner.png",
+						name:"爆款珍惜极限商品，你值得拥有",
+						pprice:"299",
+						oprice:"659",
+						discount:"5.2"
+					},	
+				]
+			}
 		]
 	});
 });

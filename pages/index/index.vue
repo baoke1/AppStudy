@@ -72,6 +72,7 @@
 </template>
 
 <script>
+	import $http from '../../common/api/request.js'
 	import indexSwiper from '../../components/index/indexSwiper.vue'
 	import recommend from '../../components/index/Recommend.vue'
 	import card from '../../components/common/Card.vue'
@@ -113,17 +114,26 @@
 				}
 			})
 		},
+		onNavigationBarButtonTap(e) {
+			if(e.float=='left'){
+				uni.navigateTo({
+					url:'/pages/search/search'
+				})
+			}
+		},
 		methods: {
 			//请求数据
 			__init(){
-				uni.request({
-					url:"http://192.168.0.104:3000/api/index_list/data",
-					success: (res) => {
-						let data = res.data.data;
-						//console.log(res.data.data);
-						this.topBar=data.topBar;
-						this.newTopBar = this.initDate(data);
-					}
+				$http.request({
+					url:"/index_list/data"
+				}).then((res)=>{
+					this.topBar=res.topBar;
+					this.newTopBar = this.initDate(res);
+				}).catch(()=>{
+					uni.showToast({
+						title:"请求失败",
+						icon:'none'
+					})
 				})
 			},
 			//添加数据
@@ -177,22 +187,34 @@
 				let index = this.topBarIndex;
 				let id = this.topBar[index].id;
 				
-				let page = Math.cell(this.newTopBar[index].data.length/5)+1;
+				let page = Math.ceil(this.newTopBar[index].data.length/5)+1;
 				
-				uni.request({
-					url: `http://192.168.0.104:3000/api/index_list/${id}/data/${page}`,
-					success: (res) => {
-						if(res.statusCode!=200){
-							return ;
-						}else{
-							let data = res.data.data;
-							this.newTopBar[index].data=[...this.newTopBar[index].data,...data];
-							//console.log(newTopBar[1].data);
-						}
-						 
-					}
+				//请求数据
+				$http.request({
+					url: `/index_list/${id}/data/${page}`
+				}).then((res)=>{
+					this.newTopBar[index].data=[...this.newTopBar[index].data,...res]
+				}).catch(()=>{
+					uni.showToast({
+						title:"请求失败",
+						icon:'none'
+					})
 				})
 				
+				// uni.request({
+				// 	url: `http://192.168.0.104:3000/api/index_list/${id}/data/${page}`,
+				// 	success: (res) => {
+				// 		if(res.statusCode!=200){
+				// 			return ;
+				// 		}else{
+				// 			let data = res.data.data;
+				// 			this.newTopBar[index].data=[...this.newTopBar[index].data,...data];
+				// 			console.log(this.newTopBar[index].data);
+				// 			//console.log(newTopBar[1].data);
+				// 		}
+						 
+				// 	}
+				// })
 				
 				this.newTopBar[index].load='last';
 				

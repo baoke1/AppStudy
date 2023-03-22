@@ -140,6 +140,68 @@
             }
             
         }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarBackgroundColor": "#FFFFFF",
+								"app-plus": {
+									"scrollIndicator": "none",
+									"titleNView": {
+										"searchInput": {
+											"placeholder": "nike",
+											"disabled": false,
+											"align": "left",
+											"autoFocus": true,
+											"borderRadius": "15px",
+											"backgroundColor": "#F7F7F7",
+											"placeholderColor": "#B3B3B3"
+										},
+										"buttons": [
+											{
+												"float": "right",
+												"color": "#636263",
+												"text": "搜索",
+												"fontSize": "12px",
+												"width":"60px"
+											}
+										]
+									}
+								}
+            }
+            
+        }
+        ,{
+            "path" : "pages/search-list/search-list",
+            "style" :
+            {
+                "navigationBarBackgroundColor": "#FFFFFF",
+            		"app-plus": {
+            			"scrollIndicator": "none",
+            			"titleNView": {
+            				"searchInput": {
+            					"placeholder": "nike",
+            					"disabled": true,
+            					"align": "left",
+            					"autoFocus": false,
+            					"borderRadius": "15px",
+            					"backgroundColor": "#F7F7F7",
+            					"placeholderColor": "#B3B3B3"
+            				},
+            				"buttons": [
+            					{
+            						"float": "right",
+            						"color": "#636263",
+            						"text": "筛选",
+            						"fontSize": "12px",
+            						"width":"60px"
+            					}
+            				]
+            			}
+            		}
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
