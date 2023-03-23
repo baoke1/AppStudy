@@ -1,6 +1,7 @@
 <template>
 	<view>
-		<ShopList></ShopList>
+		<view> {{keyword}}</view>
+		<ShopList :keyword="keyword"></ShopList>
 	</view>
 </template>
 
@@ -9,8 +10,17 @@
 	export default {
 		data() {
 			return {
-				
+				keyword: ""
 			}
+		},
+		onLoad(e) {
+			this.keyword=e.keyword;
+			console.log(e.keyword);
+			// #ifdef APP-PLUS 
+			var webView = this.$mp.page.$getAppWebview();  
+			webView.setTitleNViewSearchInputText(e.keyword) ;
+			// #endif
+			
 		},
 		components:{
 			ShopList

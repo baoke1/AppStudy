@@ -3,27 +3,15 @@
 		
 		<view class="shop-title f-color">
 			
-			<view class="shop-item">
-				<view>价格</view>
+			<view class="shop-item" v-for="(item,index) in shopList.data" :key="index" @tap='changeTap(index)'>
+				<view :class="shopList.currentIndex===index? 'f-active-coo':''">{{item.name}}</view>
 				<view class="shop-icon">
-					<view class="iconfont icon-shangjiantou up"></view>
-					<view class="iconfont icon-xiajiantou down"></view>
-				</view>
-			</view>
-			
-			<view class="shop-item">
-				<view>折扣</view>
-				<view class="shop-icon">
-					<view class="iconfont icon-shangjiantou up"></view>
-					<view class="iconfont icon-xiajiantou down"></view>
-				</view>
-			</view>
-			
-			<view class="shop-item">
-				<view>品牌</view>
-				<view class="shop-icon">
-					<view class="iconfont icon-shangjiantou up"></view>
-					<view class="iconfont icon-xiajiantou down"></view>
+					<view class="iconfont icon-shangjiantou up"
+						:class="item.status===1? 'f-active-coo':''"
+					></view>
+					<view class="iconfont icon-xiajiantou down"
+						:class="item.status===2? 'f-active-coo' : ''"
+					></view>
 				</view>
 			</view>
 			
@@ -38,8 +26,19 @@
 	import Lines from '../common/Lines.vue'
 	import CommodityList from '../../components/common/CommodityList.vue'
 	export default {
+		props:{
+			keyword:String
+		}, 
 		data() {
 			return {
+				shopList:{
+					currentIndex :0,
+					data:[
+						{name:'价格',status:1,key:"pprice"},
+						{name:'折扣',status:0, key:"discount"},
+						{name:'品牌',status:0, key:"pprice"},
+					]
+				},
 				dataList:[
 					{
 						id: 1,
@@ -76,12 +75,35 @@
 				]
 			}
 		},
+		computed:{
+			orderBy(){
+				let obj = this.shopList.data[this.shopList.currentIndex];
+				let val=obj.status==="1"?"desc":"asc";
+				return {
+					[obj.key]:val
+				}
+			}
+		},
 		components:{
 			Lines,
 			CommodityList
 		},
 		methods: {
-			
+			changeTap(index){
+				
+				
+				
+				let idx = this.shopList.currentIndex;
+				let item = this.shopList.data[idx];
+				if(idx==index){
+					return item.status = item.status===1?2:1;
+				}
+				let newItem = this.shopList.data[index];
+				item.status=0;
+				this.shopList.currentIndex=index;
+				newItem.status=1;
+				
+			}
 		}
 	}
 </script>

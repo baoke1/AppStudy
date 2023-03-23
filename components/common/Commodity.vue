@@ -2,7 +2,10 @@
 	<view>
 		<view class="commodity" :style="'flex-wrap:'+wrap+';'">
 			
-			<view class="commodity-item" v-for="(item,index) in dataList" :key='index' :style="'width:'+itemW+';'">
+			<view class="commodity-item" v-for="(item,index) in dataList" :key='index' 
+			:style="'width:'+itemW+';'"
+			@tap="goDetails"
+			>
 				<image class="commodity-img" :src="item.imgurl" :style="'height:'+bigH+';'"></image>
 				<view class="commodity-context">
 					<text class="commodity-name" :style="'font-size:'+nameSize+';'">
@@ -47,7 +50,11 @@
 			}
 		},
 		methods: {
-
+			goDetails(){
+				uni.navigateTo({
+					url:'../../pages/details/details'
+				})
+			}
 		},
 					
 	}
