@@ -1,1 +1,1 @@
-<view>购物车</view>
+<view class="shop-cart"><uni-nav-bar vue-id="320cda56-1" onVueInit="__l"></uni-nav-bar></view>

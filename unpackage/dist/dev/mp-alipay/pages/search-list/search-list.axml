@@ -1,0 +1,1 @@
+<view><view>{{''+keyword}}</view><shop-list vue-id="11b5f94e-1" keyword="{{keyword}}" onVueInit="__l"></shop-list></view>

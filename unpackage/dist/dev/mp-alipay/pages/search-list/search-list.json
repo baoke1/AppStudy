@@ -1,0 +1,6 @@
+{
+  "titleBarColor": "#FFFFFF",
+  "usingComponents": {
+    "shop-list": "/components/common/ShopList"
+  }
+}

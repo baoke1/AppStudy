@@ -258,4 +258,7 @@
 	line-height: 60rpx;
 	text-align: center;
 }
+.iconfont{
+	color:#ff770f;
+}
 </style>

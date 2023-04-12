@@ -13,7 +13,10 @@
     "components/index/banner",
     "components/index/Icons",
     "components/index/Hot",
-    "components/index/Shop"
+    "components/index/Shop",
+    "pages/search/search",
+    "pages/search-list/search-list",
+    "pages/details/details"
   ],
   "subPackages": [],
   "window": {

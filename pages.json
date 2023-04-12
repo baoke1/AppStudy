@@ -58,8 +58,10 @@
             "path" : "pages/shopcart/shopcart",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "app-plus": {
+                	"titleNView": false,
+									"scrollIndicator": "none"
+                }
             }
             
         }
@@ -175,8 +177,7 @@
 												"float": "right",
 												"color": "#636263",
 												"text": "搜索",
-												"fontSize": "12px",
-												"width":"60px"
+												"fontSize": "12px"
 											}
 										]
 									}
@@ -221,6 +222,7 @@
             {
                 "navigationBarTitleText": "商品详情",
 								"app-plus": {
+									"scrollIndicator": "none",
 									"titleNView": {
 										"type": "transparent",
 										"buttons": [

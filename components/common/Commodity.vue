@@ -4,7 +4,7 @@
 			
 			<view class="commodity-item" v-for="(item,index) in dataList" :key='index' 
 			:style="'width:'+itemW+';'"
-			@tap="goDetails"
+			@tap="goDetails(item.id)"
 			>
 				<image class="commodity-img" :src="item.imgurl" :style="'height:'+bigH+';'"></image>
 				<view class="commodity-context">
@@ -50,7 +50,7 @@
 			}
 		},
 		methods: {
-			goDetails(){
+			goDetails(id){
 				uni.navigateTo({
 					url:'../../pages/details/details'
 				})
